@@ -12,10 +12,6 @@ body {
   justify-content: space-between;
   margin: auto;
   text-align: center;
-
-  @media screen {
-    max-width: 500px;
-  }
 }
 
 .too {
@@ -109,12 +105,33 @@ body {
 
 .photo4 {
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  justify-content: space-between;
   margin-top: 33px;
 }
 
+.photo4 .grid1 {
+
+  width: 50%;
+}
+
+.photo4 .grid {
+  width: 24%;
+}
+
+.photo4 .grid img {
+  width: 100%;
+}
+
 .grid {
+  display: grid;
+  margin-bottom: 40px;
+}
+
+.photo4 .grid1 img {
+  width: 100%;
+}
+
+.grid1 {
   display: grid;
   margin-bottom: 40px;
 }
@@ -347,11 +364,6 @@ body {
   display: flex;
 }
 
-.phototr1 {}
-
-.phototr2 {}
-
-.phototr3 {}
 
 .glavaphoto {
   display: flex;
@@ -404,4 +416,56 @@ body {
   border: 1px solid #4E4D93;
   padding: 17px 32px;
   color: white;
+}
+
+
+
+@media (max-width: 1300px) {
+  .photo4 {
+    flex-wrap: wrap;
+  }
+
+  .shapka2 {
+    display: none;
+  }
+}
+
+@media(max-width:1283px) {
+  .ender {
+    flex-direction: column;
+
+  }
+}
+
+@media (max-width: 1000px) {
+
+  .intro_image {
+    display: none;
+  }
+
+
+}
+
+@media(max-width:800px) {
+  .phoro {
+    width: 49%;
+  }
+}
+
+@media (max-width: 767px) {
+  .photo4 .grid {
+    width: 49%;
+  }
+
+  .vae {
+    display: none;
+  }
+
+
+}
+
+@media(max-width: 500px) {
+  .photo4 .grid {
+    width: 100%;
+  }
 }
